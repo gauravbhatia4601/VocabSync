@@ -64,11 +64,11 @@ RUN apt-get update && apt-get install -y tzdata && \
     rm -rf /var/lib/apt/lists/*
 
 # Expose port
-EXPOSE 3001
+EXPOSE 3000
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-  CMD node -e "require('http').get('http://localhost:3001/daily.png', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"
+  CMD node -e "require('http').get('http://localhost:3000/daily.png', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"
 
 # Start the server using npm start (which uses tsx from package.json)
 CMD ["npm", "start"]

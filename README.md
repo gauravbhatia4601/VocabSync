@@ -25,11 +25,11 @@ A backend service that generates daily iPhone wallpapers featuring 3 sophisticat
 2. **Configure Build**
    - Build Pack: `Docker`
    - Dockerfile Path: `Dockerfile` (root directory)
-   - Port: `3001`
+   - Port: `3000`
 
 3. **Environment Variables**
    ```
-   PORT=3001
+   PORT=3000
    TZ=Asia/Dubai
    NODE_ENV=production
    ```
@@ -76,8 +76,8 @@ npm install
 # Start server
 npm start
 
-# Server runs on http://localhost:3001
-# Access image at http://localhost:3001/daily.png
+# Server runs on http://localhost:3000
+# Access image at http://localhost:3000/daily.png
 ```
 
 ## Project Structure
