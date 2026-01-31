@@ -1,0 +1,29 @@
+{
+  "name": "vocab",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx backend/server.ts",
+    "server": "tsx backend/server.ts"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "lucide-react": "^0.563.0",
+    "express": "^5.2.1",
+    "url": "^0.11.4",
+    "axios": "^1.13.4",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "puppeteer": "^24.36.1",
+    "node-cron": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
